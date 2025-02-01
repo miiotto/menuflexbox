@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BOX</title>    
+    <style>
+        div.conteiner {
+            background-color: bisque;
+            display: flex;
+            flex-flow: row nowrap;
+            height: 300px;
+            align-items: flex-start;
+        }
+        div.item {
+            background-color: azure;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            align-self: center;
+            margin-left: 5px;
+            margin-right: 5px;
+          
+        }
+
+        div#i1 {
+           flex: initial;
+            /*
+           flex-grow: 0;
+           flex-shrink: 1;
+           flex-basis: 150px;
+           */
+           
+        }
+        div#i2 {
+            flex: initial;
+            /*
+            flex: auto;
+            flex: none;
+            */
+           
+        }
+        div#i3 {
+            flex: 1 2 1500px;
+           
+        }
+    </style>
+</head>
+<body>
+   <div class="conteiner">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+   </div>
+</body>
+</html>
